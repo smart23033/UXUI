@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+/* 모든 디바이스 */
+body {
+    margin: 0;
+    background-color: rgba(255, 255, 0, 1);
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+.img-wrap img {
+    width: 100%;
+    height: auto;
+}
+
+/* 모바일 ~600px 대응 */
+@media screen and (min-width:1px) and (max-width:600px) {
+    body {
+        background-color: rgba(0, 0, 128, 1);
+    }
+
+    .img-wrap {
+        margin: 1em;
+    }
+
+}
+/* 타블릿 601~1024px까지 대응 */
+@media screen and (min-width: 601px) and (max-width:1024px) {
+    body {
+        background-color: rgba(0, 128, 0, 1);
+    }
+
+    .wrap-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .img-wrap {
+        width: 50%;
+        padding: 1em;
+        /* 컨텐츠 크기안에 패딩과 보더가 포함되게 만드는 속성(마진 제외) */
+        box-sizing: border-box;
+    }
+}
+
+/* 데스크탑 1025px~ 대응 */
+@media screen and (min-width: 1025px) {
+    body {
+        background-color: purple;
+    }
+
+    .wrap-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .img-wrap {
+        width: 33.33%;
+        padding: 0.5em;
+        box-sizing: border-box;
+    }
+}

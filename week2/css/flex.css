@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+.wrap {
+    background-color: yellow;
+    width: 1000px;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: 2px solid blue;
+}
+
+.wrap div {
+    background: pink;
+    flex-basis: 300px;
+    /* flex-shrink: 1;  축소비율 */
+}
+
+.w1 {
+    order: 1;
+    flex-shrink: 1;
+    flex-grow: 2;
+    border: 1px solid red;
+}
+
+.w2 {
+    order: 1;
+    flex-shrink: 2;
+    flex-grow: 3;
+    border: 1px solid red;
+    
+}
+
+.w3 {
+    order: -1;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid red;
+}
+
+.w4 { 
+    flex-shrink: 1;
+    flex-grow: 1;
+    border: 1px solid red;
+}

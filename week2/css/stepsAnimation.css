@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+@keyframes steps {
+    0% {background-position: 0 0;}
+    100% {background-position: 100% 0;}
+}
+
+.box {
+    width: 50px;
+    height: 72px;
+    margin: 50px;
+    border: 1px solid black;
+    background: url("../images/sprite-steps.png") 0 0 no-repeat;
+    animation: steps 1s steps(10) infinite;
+}
+
+@keyframes intro-text {
+    0% { width: 0;  opacity: 1;}
+    100% { width: 150px;  opacity: 1;}
+}
+
+.intro-wrap {
+    width: 440px;
+    height: 372px;
+    margin: 50px;
+    padding: 50px;
+    background: url("../images/terminalImage.png") 0 0 no-repeat;
+    border: 1px solid gray;
+    box-sizing: border-box;
+}
+
+.intro1, .intro2 {
+    /* background-color: yellow; */
+    white-space: nowrap;
+    animation: intro-text 1s forwards;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.intro1 {
+    animation-delay: 0s;
+}
+
+.intro2 {
+    animation-delay: 1.5s;
+}

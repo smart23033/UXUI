@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+section {
+    background-color: teal;
+    color: aliceblue;
+    margin: 2em;
+    padding: 1em;
+    overflow: hidden;
+}
+
+img {
+    width: 275px;
+    height: auto;
+}
+
+img.f-left {
+    float: left;
+    margin-right: 2em;
+}
+
+
+img.f-right {
+    float: right;
+    margin-left: 2em;
+}
